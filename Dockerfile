@@ -21,7 +21,10 @@ WORKDIR /app
 
 # Bundle app source
 # Basically copy everything from the directory where Dockerfile is into a working directory i.e. /app
-COPY . /app
+COPY /public /app/public/
+COPY /src /app/src/
+COPY package*.json entrypoint.sh server.js /app/
+COPY .env /app/
 
 # Install app dependencies
 RUN npm install

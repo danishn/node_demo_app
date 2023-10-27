@@ -18,6 +18,8 @@
 - `docker logs -f node_app_demo` : Container Logs
 - `docker exec -it node_app_demo /app/restart.sh` : Restart App:
 - `docker exec -it node_app_demo /bin/sh` : Container login
+- `docker image tag node_app_demo_v1 danishnadaf/node_app_demo_v1:latest` : tag local image with repo tag
+- `docker push danishnadaf/node_app_demo_v1:latest` : Push docker image to remote docker hub repo
 
 
 ## ---------------------------------------
